@@ -12,14 +12,17 @@ export default class Header extends Component {
   render() {
     console.log(this.props.muiTheme);
     return (
-    <AppBar
-      showMenuIconButton={false}
-      iconElementRight={
-          <Title title="OpenEMSR" />}
-    >
-      <Menu open={true} />
+    <div>
+      <AppBar
+        showMenuIconButton={false}
+        style={{marginBottom: 30}}
+        iconElementRight={
+            <Title title="OpenEMSR" />}
+      >
+        <Menu open={true} />
+      </AppBar>
       {this.props.children}
-    </AppBar>
+    </div>
     );
   }
 }

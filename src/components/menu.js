@@ -9,7 +9,12 @@ export default class Menu extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { config: '', open: this.props.open, width: 1200, height: null };
+    this.state = {
+      config: '',
+      open: this.props.open,
+      width: 1200,
+      height: null
+    };
   }
 
   componentWillMount() {

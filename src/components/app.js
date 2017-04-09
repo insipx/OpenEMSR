@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import Paper from 'material-ui/Paper';
 
 //styles
 import { darkMuiTheme } from '../styles';
@@ -16,11 +17,16 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 export default class App extends Component {
+
   render() {
     console.log(darkMuiTheme);
     return (
       <MuiThemeProvider muiTheme={darkMuiTheme}>
-        <Header children={this.props.children} />
+        <Paper style={ {height: "100%"} }>
+          <Header children={this.props.children}>
+            { this.props.children }
+          </Header>
+        </Paper>
       </MuiThemeProvider>
     );
   }
