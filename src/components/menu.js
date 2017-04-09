@@ -26,10 +26,10 @@ export default class Menu extends Component {
 
   getMenuWidth = () => {
     //some responsiveness to the menu
-    if (this.state.width > 1600) return 400;
-    else if (this.state.width <= 1600 && this.state.width > 1200) return 350;
-    else if (this.state.width <= 1200 && this.state.width > 600) return 300;
-    else if (this.state.width <= 600) return 256;
+    if (this.state.width > 1600) return 300;
+    else if (this.state.width <= 1600 && this.state.width > 1200) return 250;
+    else if (this.state.width <= 1200 && this.state.width > 600) return 200;
+    else if (this.state.width <= 600) return 200;
   }
 
   updateDimensions = () => {
