@@ -11,7 +11,7 @@ export default class FormsIndexContainer extends Component {
     return (
       <Grid style={{overflowY:'hidden', overflowX: 'hidden'}}>
         <Row style={{overflowY:'hidden', overflowX:'hidden'}}>
-          <Col lg={6} md={8} xs={8} xsOffset={5} mdOffset={3} lgOffset={3} style={{overflowY: 'hidden', overflowX:'hidden'}}>
+          <Col lg={6} md={8} xs={8} xsOffset={4} mdOffset={2} lgOffset={3} style={{overflowY: 'hidden', overflowX:'hidden'}}>
             <FormIndex forms={formArray} style={ {overflowY: 'hidden', overflowX: 'hidden' }}/>
           </Col>
         </Row>

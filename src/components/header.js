@@ -10,7 +10,7 @@ export default class Header extends Component {
   }
 
   render() {
-    console.log(this.props.muiTheme);
+   console.log("MUITHEME:" + this.props.muiTheme);
     return (
     <div>
       <AppBar

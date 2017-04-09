@@ -14,7 +14,6 @@ const renderForms = (props)  => (props.forms.map( (form) => {
 ));
 
 export const FormIndex = (props) => {
-  console.log("GETTING TO LINE 18 in FORMINDEX");
   if(_.isEmpty(props.forms)) {
     return <li> No Results </li>;
   }
